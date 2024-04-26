@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewer Anime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* Menetapkan ketinggian tetap untuk setiap kartu */
+        .card {
+            height: 100%;
+        }
+
+        /* Mengatur overflow dan scrollbar untuk deskripsi yang panjang */
+        .card-body {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Viewer Anime</a>
+            <form id="searchForm" class="d-flex">
+                <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+
+    <div class="top-anime" style="margin-top: 20px; margin-left: 10px;">
+        <h1>Top Anime TV</h1>
+    </div>
+
+    <div class="container mt-5 body-isi"></div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
